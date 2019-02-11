@@ -1,4 +1,11 @@
 package com.miage.altea.tp.pokemon_type_api.service;
 
-public class PokemonTypeService {
+import com.miage.altea.tp.pokemon_type_api.bo.PokemonType;
+
+import java.util.List;
+
+public interface PokemonTypeService {
+    PokemonType getPokemonType(int id);
+    List<PokemonType> getAllPokemonTypes();
+    PokemonType getPokemonName(String name);
 }
